@@ -41,8 +41,7 @@ class _MyAppState extends State<MyApp> {
       //your app id !!! No Underscore!!! see readme.md for help
       returnUrl: "com.example.newapp://paypalpay",
       //client id from developer dashboard
-      clientID:
-          "AQE3jjyc17tVtRITcFHBin8_5-p5S4dDhht4r990K0WhQnfKsmeLQZ2nIUDQNyWi5XmbAk-u0nAike_h",
+      clientID: "",
       //sandbox, staging, live etc
       payPalEnvironment: FPayPalEnvironment.sandbox,
       //what currency do you plan to use? default is US dollars
@@ -89,7 +88,7 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: Column(
             children: [
-              Text('0PB24013DK751535K'),
+              Text('1X082807X82883251'),
               for (String t in logQueue) Text(t),
               ElevatedButton(
                 child: const Text("Do payment"),
@@ -102,7 +101,7 @@ class _MyAppState extends State<MyApp> {
                         amount: 100,
 
                         ///please use your own algorithm for referenceId. Maybe ProductID?
-                        referenceId: '0PB24013DK751535M',
+                        referenceId: '',
                       ),
                     );
                   }
